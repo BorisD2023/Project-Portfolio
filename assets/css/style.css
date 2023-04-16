@@ -1,0 +1,309 @@
+@font-face {
+    font-family: worksans;
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: fjallaone;
+    src: url(../fonts/FjallaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: didact;
+    src: url(../fonts/DidactGothic-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: worksans,Arial, Helvetica, sans-serif;
+}
+
+html{
+    width: 1440px;
+    font-size: 62.5%;
+}
+
+/* Main Background Image Style */
+
+section div{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.background1{
+    background-image: url(../img/portfolio2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 803px;
+}
+
+.background2{
+    background-image: url(../img/portfolio4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 803px;
+}
+
+.background3{
+    background-image: url(../img/portfolio3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1056px;
+}
+
+.background4{
+    background-image: url(../img/portfolio5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1056px;
+}
+
+.before{
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+footer{
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1250px;
+}
+
+/* Tags Style - die ersten 4 Seiten */
+
+h5{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h3{
+    text-align: center;
+    font-family: didact,Arial, Helvetica, sans-serif;
+    font-size: 7rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+h1{
+    text-align: center;
+    font-size: 11rem;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-bottom: 140px;
+}
+
+section ul li::before{
+    content: "━  ";
+}
+
+section ul li{
+    font-size: 2em;
+    color: #666;
+    list-style: none;
+    letter-spacing: -2px;
+}
+
+.black1 ul li{
+    color: #9e9e9e;
+}
+
+section ul{
+    margin-left: 220px;
+    padding-top: 90px;
+    line-height: 110px;
+
+}
+
+h2{
+    font-family: didact,Arial, Helvetica, sans-serif;
+    font-size: 11rem;
+    font-weight: 400;
+}
+
+p{
+    font-size: 2rem;
+    padding-top: 30px;
+    letter-spacing: -1px;
+}
+
+a{
+    font-family: fjallaone,Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 200;
+    border: 2px solid  #9e9e9e;
+    padding: 15px 25px;
+}
+
+.black1 p{
+    color: #9e9e9e;
+}
+
+.black1 h2{
+    color: #fff;
+}
+
+.white1 ul li{
+    margin-top: 85px;
+}
+
+.white1 p{
+    color: #666;
+}
+
+.white1 a{
+    border: 2px solid #000;
+    color: #000;
+}
+
+.white1 ul article{
+    color: #666;
+    margin-right: 110px;
+    margin-top: 54px;
+}
+
+.black1 ul article{
+    color: #6666667d;
+    margin-right: 110px;
+}
+
+article{
+    font-size: 20rem;
+    font-family: fjallaone;
+    text-align: right;
+       
+}
+
+/* Tag Style vorletzte Seite */
+
+h4{
+    font-weight: 400;
+    font-size: 15rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+
+.before p{
+    color: #666;
+    font-size: 3em;
+    width: 710px;
+    line-height: 42px;
+    margin-left: 96vh;
+    margin-top: 99px;
+    margin-bottom: 61px;
+}
+
+.before a{
+    font-family: didact,Arial, Helvetica, sans-serif;
+    border: none;
+    font-size: 4.5rem;
+    font-weight: 200;
+    margin-left: 92.5vh;
+}
+
+/* Last Page Style */
+
+footer ul{
+    text-align: center;
+    margin-top: 150px;
+}
+
+footer ul li a{
+    font-family: didact,Arial, Helvetica, sans-serif;
+    color: #000;
+    border: none;
+    font-size: 15rem;
+    line-height: 300px;
+}
+
+footer section p{
+    text-align: center;
+    margin-top: 150px;
+}
+
+/* Hover and Animation effects */
+
+.black1 ul a:hover{
+    border-color: #fff;
+    background-color: #fff;
+    color: #000;
+}
+
+.black1 ul a:hover + article{
+    color: #fff;
+}
+
+.white1 ul a:hover{
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+}
+
+.white1 ul a:hover + article{
+    color: #000;
+}
+
+.before a:hover{
+    text-decoration: underline;
+    color: #9e9e9e;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+.animation{
+    margin-top: 150px;
+    font-size: 3rem;
+    color: black;
+}
+
+.animation{ 
+    animation: example 2s ease 0s infinite normal both;
+}
+
+@keyframes example {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
